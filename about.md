@@ -12,5 +12,4 @@ permalink: /about/
 
 ## 참여 커뮤니티
 다양한 커뮤니티가 멜팅콘 커뮤니티 연합체에 적극적으로 참여하고 있습니다.  
-<a class="button is-inverted is-outlined is-warning" href="{{ '/members' | prepend: site.baseurl }}">
-참여 커뮤니티 목록 보기</a>
+{% include btn.html label="참여 커뮤니티 목록 보기" url="{{ "/members/" | prepend: site.baseurl }}"}
