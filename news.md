@@ -9,4 +9,5 @@ permalink: /news/
 - {{ post.date | date: "%Y.%m.%d" }}{% if post.author %} | {{ post.author }}{% endif %}
 - {{ post.content | strip_html | truncatewords:50 }}
 {% endfor %}
-{% include btn.html label="아카이브로 이동" url="{{ "/archive/" | prepend: site.baseurl }}"}
+<a class="button is-inverted is-outlined is-warning" href='{{ "/archive/" | prepend: site.baseurl }}'>
+아카이브로 이동</a>

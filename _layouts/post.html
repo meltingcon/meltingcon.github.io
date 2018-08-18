@@ -1,0 +1,45 @@
+---
+layout: frame
+---
+
+<section class="hero is-warning is-bold is-fullheight">
+    <!-- Hero head: will stick at the top -->
+   
+  
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container">
+        {% include logo.html %}
+         
+        <h1 class="title">
+          <a class="button is-inverted is-outlined is-warning" href='{{ "/news" | prepend: site.baseurl }}'>
+          <i class="fas fa-chevron-left"></i></a> 새 소식</h1>
+        <div class="box content">
+                <b>{{ page.date | date: "%Y.%m.%d" }}</b>
+                <h1>{{page.title}}</h1>
+                
+                {{ content }}
+                <hr>
+                <!-- Pagination links -->
+                {% if page.previous.url %}
+                <p>Previous</p>
+                <h3><a href="{{page.previous.url}}" >{{ page.previous.title }}</a></h3>
+                <p>{{ page.previous.date | date: "%Y.%m.%d" }}</p>
+                <hr>
+                {% else %}
+                {% endif %}
+                {% if page.next.url %}
+                <p>Next</p>
+                <h3><a href="{{page.next.url}}" >{{ page.next.title }}</a></h3>
+                <p>{{ page.next.date | date: "%Y.%m.%d" }}</p>
+                <hr>
+                {% else %}
+                {% endif %}
+          </div>
+      </div>
+    </div>
+  
+    
+  </section>
+  
+
