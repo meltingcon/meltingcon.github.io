@@ -1,0 +1,35 @@
+.main-title{
+  margin-bottom: 1em;
+  border-style: solid;
+  padding: 16px;
+  font-size: 2.5em;
+  display: inline-block;
+}
+
+.main-title-small{
+  margin: 0.5em;
+  margin-bottom: 32px;
+  border-style: solid;
+  padding: 8px;
+  font-size: 1em;
+  display: inline-block;
+}
+
+@media screen and (max-width: 500px) {
+  .main-title{
+    margin-bottom: 1em;
+    border-style: solid;
+    padding: 16px;
+    font-size: 1.7em;
+    display: inline-block;
+  }
+
+  .main-title-small{
+    margin: 0.5em;
+    margin-bottom: 32px;
+    border-style: solid;
+    padding: 8px;
+    font-size: 0.5em;
+    display: inline-block;
+  }
+}

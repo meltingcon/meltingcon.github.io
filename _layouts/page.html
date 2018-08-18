@@ -1,0 +1,24 @@
+---
+layout: frame
+---
+<section class="hero is-warning is-bold is-fullheight">
+    <!-- Hero head: will stick at the top -->
+   
+  
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container">
+        {% include logo.html %}
+         
+        <h1 class="title">
+          <a class="button is-inverted is-outlined is-warning" href="/{{site.baseurl}}">
+          <i class="fas fa-chevron-left"></i></a> {{page.title}}</h1>
+        <div class="content">
+          {{content}}
+          </div>
+      </div>
+    </div>
+  
+    
+  </section>
+  

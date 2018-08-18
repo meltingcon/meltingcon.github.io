@@ -1,0 +1,100 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: MeltingCon 2018
+email: meltingcon.kr@gmail.com
+description: MeltingCon 2018
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://meltingcon.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Usernames and API Keys
+github_username: meltingcon
+gmaps_embed_api_key: AIzaSyB94qSWPswDXOjd35pfzUpQduKzjJvPiRs
+
+# Location & time
+period: "2018년 05월 26일 오후 12:00 ~ 오후 6:00"
+location: "한국마이크로소프트(광화문 더케이트윈타워 A동 11층)"
+address: "서울특별시 종로구 중학동 종로 1길 50"
+location_query: "한국마이크로소프트"
+
+# Event Sponsors
+members:
+  - name: GoDev
+    url: #
+    desc: >
+      (설명)
+  - name: 데이터그램
+    url: https://www.facebook.com/groups/datergram/
+    desc: >
+      (설명)
+  - name: 모여서 각자 코딩하는 모임
+    url: https://www.facebook.com/groups/mogaco/
+    desc: >
+      (설명)
+  - name: VueJS 사용자 그룹
+    url: https://www.facebook.com/groups/vuejs.korea/about/
+    desc: >
+      (설명)
+  - name: 스파크 사용자 모임
+    url: https://www.facebook.com/groups/sparkkoreauser/
+    desc: >
+      (설명)
+  - name: C++ 사용자 그룹
+    url: https://www.facebook.com/groups/cppkorea/
+    desc: >
+      (설명)
+  - name: 우분투 한국 커뮤니티
+    url: https://www.ubuntu-kr.org/
+    desc: >
+      (설명)
+  - name: OpenStack 한국 커뮤니티
+    url: http://openstack.or.kr/
+    desc: >
+      (설명)
+  - name: 코딩이랑 무관합니다만,
+    url: https://www.facebook.com/groups/System.out.Coding/
+    desc: >
+      (설명)
+  - name: 한국 Azure 사용자 그룹
+    url: https://krazure.com/
+    desc: >
+      (설명)
+  - name: 한국 Surface 사용자모임
+    url: https://www.facebook.com/groups/SurfaceKorea/about/
+    desc: >
+      (설명)
+  - name: Seoul.js
+    url: https://seoul.js.org/
+    desc: >
+      (설명)
+  - name: Kubernetes Korea Group
+    url: https://www.facebook.com/groups/k8skr/
+    desc: >
+      (설명)
+# license
+owner: "MeltingCon Community Alliance"
+code_license: "MIT"
+copyright: Copyright (c) 2018 MeltingCon Community Alliance All Rights Reserved.
+content_license: "CC BY-SA 4.0"
+
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+exclude:
+  - Gemfile
+  - Gemfile.lock

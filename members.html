@@ -1,0 +1,22 @@
+---
+layout: page
+title: "참여 커뮤니티"
+permalink: /members/
+---
+<div class="tile is-ancestor">
+{% for member in site.members %}
+    <div class="tile is-parent">
+    <article class="tile is-child box">
+        <p class="title">{{ member.name }}</p>
+        <p>{{ member.desc }}</p>
+        <a class="button" href="{{member.url}}">웹사이트 방문</a>
+    </article>
+    </div>
+    {% assign result = forloop.index | modulo:3 %}
+    {% if result == 0 %}
+    </div>
+    <div class="tile is-ancestor">
+    {% else %}
+    {% endif %}
+{% endfor %}
+</div>
